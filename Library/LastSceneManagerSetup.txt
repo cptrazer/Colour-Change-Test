@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SwitchColours.unity
+- path: Assets/Scenes/Lists.unity
   isLoaded: 1
   isActive: 1
