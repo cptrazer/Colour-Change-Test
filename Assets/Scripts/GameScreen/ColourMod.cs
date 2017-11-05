@@ -9,6 +9,7 @@ public class ColourMod : MonoBehaviour
 
     [SerializeField]
     GameObject GetGameObject;
+    public List<GameObject> ColourTheHouse = new List<GameObject>();
 
     int colourState = 0;
     
@@ -32,6 +33,14 @@ public class ColourMod : MonoBehaviour
 
     private void OnMouseDown()
     {
+
+        GameObject House;
+        House = Instantiate(ColourTheHouse[0]) as GameObject;
+        Debug.Log("getting there");
+       /** House.transform.SetParent(transform);
+        House.transform.position = new Vector3(0.0f, 0.5f, 5.0f);
+        ColourTheHouse.Add(House);
+    **/
 
         if (colourState == 0)
         {
