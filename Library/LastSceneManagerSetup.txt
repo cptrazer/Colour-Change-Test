@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Paint_Houses.unity
+- path: Assets/Scenes/Lists.unity
   isLoaded: 1
   isActive: 1
