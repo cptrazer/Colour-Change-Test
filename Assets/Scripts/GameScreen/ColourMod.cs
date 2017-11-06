@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class ColourMod : MonoBehaviour
 {
@@ -8,8 +9,6 @@ public class ColourMod : MonoBehaviour
 
 
     [SerializeField]
-    GameObject GetGameObject;
-    public List<GameObject> ColourTheHouse = new List<GameObject>();
 
     int colourState = 0;
     
@@ -34,36 +33,33 @@ public class ColourMod : MonoBehaviour
     private void OnMouseDown()
     {
 
-        GameObject House;
-        House = Instantiate(ColourTheHouse[0]) as GameObject;
-        Debug.Log("getting there");
-       /** House.transform.SetParent(transform);
-        House.transform.position = new Vector3(0.0f, 0.5f, 5.0f);
-        ColourTheHouse.Add(House);
-    **/
-
         if (colourState == 0)
         {
             Debug.Log("Colour 0");
-            gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+            Material newMat = Resources.Load("Blue", typeof(Material)) as Material;
+            gameObject.GetComponent<Renderer>().material = newMat;
         }
 
         if (colourState == 1)
         {
             Debug.Log("Colour 1");
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
+            Material newMat = Resources.Load("Orange", typeof(Material)) as Material;
+            gameObject.GetComponent<Renderer>().material = newMat;
+            Selection.activeGameObject = gameObject;
         }
 
         if (colourState == 2)
         {
             Debug.Log("Colour 2");
-            gameObject.GetComponent<Renderer>().material.color = Color.magenta;
+            Material newMat = Resources.Load("Green", typeof(Material)) as Material;
+            gameObject.GetComponent<Renderer>().material = newMat;
         }
                 
         if (colourState == 3)
         {
             Debug.Log("Colour 3");
-            gameObject.GetComponent<Renderer>().material.color = Color.green;
+            Material newMat = Resources.Load("Yellow", typeof(Material)) as Material;
+            gameObject.GetComponent<Renderer>().material = newMat;
         }
 
         colourState = (colourState + 1) % 4;

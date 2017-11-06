@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 4044528991271446}
   - component: {fileID: 114205342600985520}
   - component: {fileID: 65362121504118320}
+  - component: {fileID: 23648401648086844}
   m_Layer: 0
   m_Name: WhiteHouse
   m_TagString: Untagged
@@ -136,8 +137,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1817238853357666}
-  m_LocalRotation: {x: 0, y: -0.7820646, z: 0, w: 0.6231974}
-  m_LocalPosition: {x: 261.61, y: 41, z: -452.93}
+  m_LocalRotation: {x: 0, y: -0.09914598, z: 0, w: 0.9950729}
+  m_LocalPosition: {x: 252.54301, y: 41, z: -457.60452}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 4834679951560122}
@@ -148,7 +149,7 @@ Transform:
   - {fileID: 4382353095371708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -102.9, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -11.38, z: 0}
 --- !u!4 &4086810740537772
 Transform:
   m_ObjectHideFlags: 1
@@ -355,6 +356,38 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!23 &23648401648086844
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817238853357666}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &23720872186229928
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -471,8 +504,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9847035, y: 2.7819672, z: 3.3556824}
+  m_Center: {x: 0.031567175, y: 0.8909836, z: 0.038074173}
 --- !u!114 &114205342600985520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -484,6 +517,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c26aa2b6c504d4887c9ffd87eb4ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GetGameObject: {fileID: 1817238853357666}
-  ColourTheHouse:
-  - {fileID: 1817238853357666}
+  colourState: 0
